@@ -297,15 +297,67 @@
 			</main>
 		</section>
 		
+		<section id = "question21" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen C. Question 21.</h1>
+			</div>
+			<main>
+				<h4>Phosphoric acid dissociates according to the equilibrium:<br>H<sub>3</sub>PO<sub>4</sub> (aq) &#x21CC 3H<sup>+</sup> (aq) + PO<sub>4</sub><sup>-</sup> (aq)</h4> 
+				<h5>0.0405</h5>
+				<form>
+					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
+				</form>
+			</main>
+		</section>
+				
+		<section id = "question22" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen C. Question 22.</h1>
+			</div>
+			<main>
+				<h5>Hydroxide ion</h5>
+				<form>
+					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
+				</form>
+			</main>
+		</section>
+		
+		<section id = "question23" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen C. Question 23.</h1>
+			</div>
+			<main>
+				<h4>The acid is a strong acid.</h4>
+				<h5>1.58 × 10<sup>-23</sup> mol&#183;l<sup>-1</sup></h5>
+				<form>
+					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
+				</form>
+			</main>
+		</section>
+				
+		<section id = "question24" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen C. Question 24.</h1>
+			</div>
+			<main>
+				<h4>The concentration of the salt is 0.258 mol&#183;l.</h4>
+				<h5>mol&#183;l<sup>-1</sup></h5>
+				<form>
+					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
+				</form>
+			</main>
+		</section>
+		
 		<input type = "button" id = "fullscreenButton" value = "Click to enter full screen." onclick = "openfullScreen()"/>
 		
 		<script>
-			question_no = 1;
-			document.getElementById("question" + question_no).style.display = "block";
+			question_no = 0;
+			numbers = [8,22,6,21,7,1,2,13,4,16,9,14,11,12,3,15,23,17,10,20,19,5,18,24];
+			document.getElementById("question" + numbers[question_no]).style.display = "block";
 			function nextQuestion() {
-				document.getElementById("question" + question_no).style.display = "none";
+				document.getElementById("question" + numbers[question_no]).style.display = "none";
 				question_no += 1;
-				document.getElementById("question" + question_no).style.display = "block";
+				document.getElementById("question" + numbers[question_no]).style.display = "block";
 			}
 			
 			var elem = document.documentElement;
