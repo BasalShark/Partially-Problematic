@@ -300,7 +300,7 @@
 			</div>
 			<main>
 				<h4>The pH of the solution is 2.1 in standard conditions.</h4>
-				<h5>7.94 &#10005; 10<sup>-3</sup> mol&#183;l<sup>-1</sup></h5>
+				<h5>7.94 × 10<sup>-3</sup> mol&#183;l<sup>-1</sup></h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -312,7 +312,7 @@
 				<h1>Screen D. Question 24.</h1>
 			</div>
 			<main>
-				<h4>The pH of the solution is 5.1</h4>
+				<h4>The pH of the solution is 5.1.</h4>
 				<h5>0.118 mol&#183;l<sup>-1</sup></h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
@@ -350,7 +350,7 @@
 			</div>
 			<main>
 				<h3>Which of these reactions is never spontaneous?</h3>
-				<h5>N<sub>2</sub> + O<sub>2</sub> &#8594 2NO<sub>2</sub></h5>
+				<h5>N<sub>2</sub> + 2O<sub>2</sub> &#8594 2NO<sub>2</sub></h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -464,7 +464,7 @@
 				<h1>Screen D. Question 35.</h1>
 			</div>
 			<main>
-				<h4>Theobromide can be lethal in high concentrations. It is found in chocolate.</h4>
+				<h4>Theobromine can be lethal in high concentrations. It is found in chocolate.</h4>
 				<h5>35.5</h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
@@ -472,11 +472,20 @@
 			</main>
 		</section>
 		
+		<section id = "question36" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen D.</h1>
+			</div>
+			<main>
+				<h3>Congratulations: You've completed all the questions! Hand your sheet in to get marked, and I'll give you a score back :) </h3>
+			</main>
+		</section>
+		
 		<input type = "button" id = "fullscreenButton" value = "Click to enter full screen." onclick = "openfullScreen()"/>
 		
 		<script>
-			question_no = 0;
-			numbers = [11,29,14,12,7,6,20,33,4,2,27,15,17,23,8,3,9,26,5,32,1,13,21,16,35,25,28,31,34,19,10,24,30,18,22];
+			question_no = 19;
+			numbers = [11,29,14,12,7,6,20,33,4,2,27,15,17,23,8,3,9,26,5,32,1,13,21,16,35,25,28,31,34,19,10,24,30,18,36];
 			document.getElementById("question" + numbers[question_no]).style.display = "block";
 			function nextQuestion() {
 				document.getElementById("question" + numbers[question_no]).style.display = "none";
