@@ -187,7 +187,7 @@
 			</div>
 			<main>
 				<h4>But-2-ene + Hydrogen</h4>
-				<h5>Propan-1-ol</h5>
+				<h5>Propan-2-ol</h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -509,11 +509,20 @@
 			</main>
 		</section>
 		
+		<section id = "question36" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen C.</h1>
+			</div>
+			<main>
+				<h3>Congratulations: You've completed all the questions! Hand your sheet in to get marked, and I'll give you a score back :) </h3>
+			</main>
+		</section>
+		
 		<input type = "button" id = "fullscreenButton" value = "Click to enter full screen." onclick = "openfullScreen()"/>
 		
 		<script>
-			question_no = 0;
-			numbers = [11,29,14,12,7,6,20,33,4,2,27,15,17,23,8,3,9,26,5,32,1,13,21,16,35,25,28,31,34,19,10,24,30,18,22];
+			question_no = 19;
+			numbers = [11,29,14,12,7,6,20,33,4,2,27,15,17,23,8,3,9,26,5,32,1,13,21,16,35,25,28,31,34,19,10,24,30,18,36];
 			document.getElementById("question" + numbers[question_no]).style.display = "block";
 			function nextQuestion() {
 				document.getElementById("question" + numbers[question_no]).style.display = "none";
