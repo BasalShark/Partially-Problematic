@@ -273,7 +273,7 @@
 			</div>
 			<main>
 				<h4>0.05 moles of phosphoric acid in solution are placed in a closed system and left for 3 hours.</h4>
-				<h5>8.20 &#10005; 10<sup>-4</sup></h5>
+				<h5>8.20 × 10<sup>-4</sup></h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -298,7 +298,7 @@
 			</div>
 			<main>
 				<h3>What is the concentration of OH<sup>-</sup>ions in the acid solution?</h3>
-				<h5>6.29 &#10005; 10<sup>-12</sup> mol&#183;l<sup>-1</sup></h5>
+				<h5>6.29 × 10<sup>-12</sup> mol&#183;l<sup>-1</sup></h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -310,8 +310,8 @@
 				<h1>Screen A. Question 24.</h1>
 			</div>
 			<main>
-				<h4>The buffer solution contains ethanoic acid and sodium ethanoate.</h4>
-				<h5>3.63 &#10005; 10<sup>-6</sup> mol&#183;l<sup>-1</sup></h5>
+				<h4>A buffer solution contains ethanoic acid and sodium ethanoate.</h4>
+				<h5>3.63 × 10<sup>-6</sup> mol&#183;l<sup>-1</sup></h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -361,7 +361,7 @@
 			</div>
 			<main>
 				<h3>Which of these temperatures is the reaction feasible at?</h3>
-				<h5>S<sub>8</sub> + 8O<sub>2</sub> &#8594 8SO<sub>2</sub></h5>
+				<h5>100K</h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
 				</form>
@@ -462,7 +462,7 @@
 				<h1>Screen A. Question 35.</h1>
 			</div>
 			<main>
-				<h4>The lethal intake of theobromide per kilogram is 1000 mg.</h4>
+				<h4>The lethal intake of theobromine per kilogram is 1000 mg.</h4>
 				<h5>14</h5>
 				<form>
 					<input type="button" id = "nextbutton" value = "Next Question!" onclick="nextQuestion()"/>
@@ -470,11 +470,20 @@
 			</main>
 		</section>
 		
+		<section id = "question36" style = "display:none;">
+			<div id = "banner">
+				<h1>Screen A.</h1>
+			</div>
+			<main>
+				<h3>Congratulations: You've completed all the questions! Hand your sheet in to get marked, and I'll give you a score back :) </h3>
+			</main>
+		</section>
+		
 		<input type = "button" id = "fullscreenButton" value = "Click to enter full screen." onclick = "openfullScreen()"/>
 		
 		<script>
-			question_no = 0;
-			numbers = [11,29,14,12,7,6,20,33,4,2,27,15,17,23,8,3,9,26,5,32,1,13,21,16,35,25,28,31,34,19,10,24,30,18,22];
+			question_no = 19;
+			numbers = [11,29,14,12,7,6,20,33,4,2,27,15,17,23,8,3,9,26,5,32,1,13,21,16,35,25,28,31,34,19,10,24,30,18,36];
 			document.getElementById("question" + numbers[question_no]).style.display = "block";
 			function nextQuestion() {
 				document.getElementById("question" + numbers[question_no]).style.display = "none";
